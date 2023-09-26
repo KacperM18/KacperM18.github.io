@@ -1,40 +1,84 @@
 
-<!DOSTYPE html>
+<!DOCTYPE html>
 <html lang="pl">
-<html>   
-         <head>
-		  <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="Content-Language" content="pl">
-    <meta name="Reply-to" content="nwmczmtak@gmail.com">
-    <meta name="Title" content="tak">
-    <meta name="page-topic" content="nie wiem, ale się dowiem">
-    <meta name="Creation_Date" content="2023-09-13">
-    <meta name="Keywords" content="tak, nie, nie wiem, może">
-    <meta name="Description" content="nie wiem, ale się dowiem">
+    <meta name="Reply-to" content="grzyby@gmail.com">
+    <meta name="Title" content="Grzyby">
+    <meta name="page-topic" content="Moje ulubione grzyby">
+    <meta name="Creation_Date" content="2023-09-12">
+    <meta name="Keywords" content="Grzyb, Grzyby">
+    <meta name="Description" content="Encyklopedia o grzybach.">
     <meta name="Robots" content="index, follow">
-				
-               <title>nie wiem, ale się dowiem</title>
-         </head>
-         <body>
-            <hl>tak</hl>
-        
-		    <h2>nie</h2>
-            <h3>nie wiem</h3>
-            <h4>może</h4>
-		  <main>
-        <div id="container">
-            <img src="zdziwiony-pikachu-pikaczu-mem.jpg" alt="zdziwienie" style="display: block; margin: 0 auto;">>
-        </div>
-        <p> nie wime wym jest wyjustrowanie ani pragraf z wcięciem </p>
-        <section>
-            <h2>Kontakt</h2>
-            <p>Można się ze mną skontaktować pod adresem nwmczmtak@gmail.com</p>
-        </section>
-    </main>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png"/>
+    <title>Mugiigo NS Margeices</title>
+    <style>
+        /* Dodaj stylizację według potrzeb */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #696969;
+            color: blue;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #8A2BE2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #808080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gra Until Dawn</h1>
+        <img src="" alt="" style="width: 0px; height: 0px;">
+    </header>
+	<h4>Moje ulubione postacię UD</h4>
+    <nav>
+        <a href="https://until-dawn.fandom.com/wiki/Sam">Sam Giddings</a>
+        <a href="https://until-dawn.fandom.com/wiki/Mike">Mike Munroe</a>
+        <a href="https://until-dawn.fandom.com/wiki/Chris">Chris Hartley</a>
+        <a href="https://until-dawn.fandom.com/wiki/Until_Dawn">oficjalna strona fandomu UD</a>
+    </nav>
+    <section>
+        <h2></h2>
+		<img src="" alt="" style="width: 1300px; height: 1300px;">
+        <p></p>
+    </section>
     <footer>
-        <p>&copy; 2023 Made by Kluskin</p>
+        <p>&copy; 2023 UD</p>
+        <p>Data: <span id="currentDate"></span></p>
+        <script>
+            // JavaScript, który automatycznie ustawia aktualną datę
+            const currentDateElement = document.getElementById('currentDate');
+            const currentDate = new Date();
+            const year = currentDate.getFullYear();
+            const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+            const day = currentDate.getDate().toString().padStart(2, '0');
+            currentDateElement.textContent = `${day}.${month}.${year}`;
+        </script>
     </footer>
-         </body>
+</body>
 </html>
