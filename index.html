@@ -15,41 +15,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="logo.png"/>
     <title>Patriotyzm</title>
-    <style>
+	 <style>
+        
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #090d5c;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        nav {
-            background-color: #8A2BE2;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-        nav a {
-            text-decoration: none;
-            color: white;
-            margin: 10px;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #090d5c;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+            background-image: url(flaga.jpg);
 </head>
 <body>
+	<audio id="audio-player" controls autoplay>
+        <source src="Rick Astley - Never Gonna Give You Up.mp3" type="audio/mp3">
+    </audio>
     <header>
 
 		<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100038756511179%2Fvideos%2F1039629600784403%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
@@ -72,9 +47,6 @@
             const day = currentDate.getDate().toString().padStart(2, '0');
             currentDateElement.textContent = `${day}.${month}.${year}`;
         </script>
-	     <audio id="audio-player" controls autoplay>
-        <source src="Rick Astley - Never Gonna Give You Up.mp3" type="audio/mp3">
-    </audio>
     </footer>
 </body>
 </html>
