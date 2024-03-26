@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Najserdeczniejsze życzenia dla naszych kochanych Sorów i Sorek</title>
+    <style>
+        body {
+            background-image: url(Holidays_Easter_Tulips_Colored_background_Eggs_544475_1920x1080.jpg);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        footer {
+        background-color: #f2f2f2;
+        padding: 2px 0;
+        font-size: 14px;
+        position:absolute;
+		bottom:0;
+		width:100%;
+		height:60px;
+    }
+
+
+    </style>
+    </head>
+    <body>
+    
+    <div id="page1">
+        <h2>Wprowadź swoje imię:</h2>
+        <input type="text" id="nameInput">
+        <button onclick="showGreetings()">Dalej</button>
+    </div>
+    
+    <div id="page2" style="display: none;">
+        <h2>Życzenia:</h2>
+        <div id="greetings"></div>
+    </div>
+    
+    <script>
+    function showGreetings() {
+        var name = document.getElementById("nameInput").value.trim();
+        var greetingsDiv = document.getElementById("greetings");
+        var page1 = document.getElementById("page1");
+        var page2 = document.getElementById("page2");
+    
+        if (name !== "") {
+            var greetingMessage = "";
+    
+            if (name.slice(-1) === "a") {
+                greetingMessage = "Szanowna Pani " + name + ". W tej radosnej i wyjątkowej chwili Wielkanocy życzę Ci, abyś doświadczyła cudu odrodzenia w swoim życiu - nie tylko w duchowym sensie, ale także w sferze osobistej i zawodowej. Niech każdy dzień będzie dla Ciebie jak jasna wiosenna pora, pełna nadziei, światła i nowych możliwości. Niech ta świąteczna aura napełni Twoje serce spokojem, a Twoje kroki będą prowadzone drogą pełną miłości i harmonii. Wesołych Świąt Wielkanocnych!";
+            } else if (name.toLowerCase() === "kuba") {
+            greetingMessage = "Szanowny Panie " + name + ". W tej radosnej i wyjątkowej chwili Wielkanocy życzę Ci, abyś doświadczył cudu odrodzenia w swoim życiu - nie tylko w duchowym sensie, ale także w sferze osobistej i zawodowej. Niech każdy dzień będzie dla Ciebie jak jasna wiosenna pora, pełna nadziei, światła i nowych możliwości. Niech ta świąteczna aura napełni Twoje serce spokojem, a Twoje kroki będą prowadzone drogą pełną miłości i harmonii. Wesołych Świąt Wielkanocnych!";
+            } else {
+                greetingMessage = "Szanowny Panie " + name + ". W tej radosnej i wyjątkowej chwili Wielkanocy życzę Ci, abyś doświadczył cudu odrodzenia w swoim życiu - nie tylko w duchowym sensie, ale także w sferze osobistej i zawodowej. Niech każdy dzień będzie dla Ciebie jak jasna wiosenna pora, pełna nadziei, światła i nowych możliwości. Niech ta świąteczna aura napełni Twoje serce spokojem, a Twoje kroki będą prowadzone drogą pełną miłości i harmonii. Wesołych Świąt Wielkanocnych!";
+            }
+    
+            greetingsDiv.textContent = greetingMessage;
+            page1.style.display = "none";
+            page2.style.display = "block";
+        } else {
+            alert("Proszę podać imię.");
+        }
+    }
+    </script>
+    <footer id="autor">
+        <p>Autor: Kacper Maciaszek</p>
+    </footer>
+</body>
+</html>
