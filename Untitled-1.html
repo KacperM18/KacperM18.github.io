@@ -2,82 +2,98 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Najserdeczniejsze życzenia dla naszych kochanych Sorów i Sorek</title>
+    <title>title</title>
     <style>
-        body {
-            background-image: url(Holidays_Easter_Tulips_Colored_background_Eggs_544475_1920x1080.jpg);
-            font-family: Arial, sans-serif;
-            text-align: center;
+        table{
+            width: 30%;
         }
-        input[type="text"] {
-            padding: 10px;
-            margin-top: 20px;
-            font-size: 16px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        footer {
-        background-color: #f2f2f2;
-        padding: 2px 0;
-        font-size: 14px;
-        position:absolute;
-		bottom:0;
-		width:100%;
-		height:60px;
-    }
-
-
     </style>
-    </head>
-    <body>
-    
-    <div id="page1">
-        <h2>Wprowadź swoje imię:</h2>
-        <input type="text" id="nameInput">
-        <button onclick="showGreetings()">Dalej</button>
-    </div>
-    
-    <div id="page2" style="display: none;">
-        <h2>Życzenia:</h2>
-        <div id="greetings"></div>
-    </div>
-    
-    <script>
-    function showGreetings() {
-        var name = document.getElementById("nameInput").value.trim();
-        var greetingsDiv = document.getElementById("greetings");
-        var page1 = document.getElementById("page1");
-        var page2 = document.getElementById("page2");
-    
-        if (name !== "") {
-            var greetingMessage = "";
-    
-            if (name.slice(-1) === "a") {
-                greetingMessage = "Szanowna Pani " + name + ". W tej radosnej i wyjątkowej chwili Wielkanocy życzę Ci, abyś doświadczyła cudu odrodzenia w swoim życiu - nie tylko w duchowym sensie, ale także w sferze osobistej i zawodowej. Niech każdy dzień będzie dla Ciebie jak jasna wiosenna pora, pełna nadziei, światła i nowych możliwości. Niech ta świąteczna aura napełni Twoje serce spokojem, a Twoje kroki będą prowadzone drogą pełną miłości i harmonii. Wesołych Świąt Wielkanocnych!";
-            } else if (name.toLowerCase() === "kuba") {
-            greetingMessage = "Szanowny Panie " + name + ". W tej radosnej i wyjątkowej chwili Wielkanocy życzę Ci, abyś doświadczył cudu odrodzenia w swoim życiu - nie tylko w duchowym sensie, ale także w sferze osobistej i zawodowej. Niech każdy dzień będzie dla Ciebie jak jasna wiosenna pora, pełna nadziei, światła i nowych możliwości. Niech ta świąteczna aura napełni Twoje serce spokojem, a Twoje kroki będą prowadzone drogą pełną miłości i harmonii. Wesołych Świąt Wielkanocnych!";
-            } else {
-                greetingMessage = "Szanowny Panie " + name + ". W tej radosnej i wyjątkowej chwili Wielkanocy życzę Ci, abyś doświadczył cudu odrodzenia w swoim życiu - nie tylko w duchowym sensie, ale także w sferze osobistej i zawodowej. Niech każdy dzień będzie dla Ciebie jak jasna wiosenna pora, pełna nadziei, światła i nowych możliwości. Niech ta świąteczna aura napełni Twoje serce spokojem, a Twoje kroki będą prowadzone drogą pełną miłości i harmonii. Wesołych Świąt Wielkanocnych!";
-            }
-    
-            greetingsDiv.textContent = greetingMessage;
-            page1.style.display = "none";
-            page2.style.display = "block";
-        } else {
-            alert("Proszę podać imię.");
-        }
-    }
-    </script>
-    <footer id="autor">
-        <p>Autor: Kacper Maciaszek</p>
-    </footer>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <th rowspan="2">N1</th><th>N2</th><th>N3</th>
+        </tr>
+        <tr>
+            <td>K1</td><td>K2</td>
+        </tr>
+        <tr>
+            <td>K3</td><td>K4</td><td>K5</td>
+        </tr>
+    </table>
+
+    <p></p>
+
+    <table border="2">
+        <tr>
+            <th>N1</th><th>N2</th><th>N3</th><th>N4</th>
+        </tr>
+        <tr>
+            <td>K1</td><td colspan="2">K2</td><td>K3</td>
+        </tr>
+        <tr>
+            <td>K4</td><td>K5</td><td>K6</td><td>K7</td>
+        </tr>
+    </table>
+
+    <p></p>
+
+    <table border="2">
+        <tr>
+            <th colspan="2">N1</th><th>N2</th><th>N3</th>
+        </tr>
+        <tr>
+            <td rowspan="2">K1</td><td>K2</td><td>K3</td><td>K4</td>
+        </tr>
+        <tr>
+            <td>K5</td><td>K6</td><td>K7</td>
+        </tr>
+        <tr>
+            <td>K8</td><td>K9</td><td>K10</td><td>K11</td>
+        </tr>
+    </table>
+
+    <p></p>
+
+    <table border="2">
+        <tr>
+            <th>N1</th><th>N2</th><th>N3</th><th>N4</th>
+        </tr>
+        <tr>
+            <td>K1</td><td>K2</td><td>K3</td><td>K4</td>
+        </tr>
+        <tr>
+            <td>K5</td><td rowspan="2">K6</td><td>K7</td><td>K8</td>
+        </tr>
+        <tr>
+            <td>K9</td><td colspan="2">K10</td>
+        </tr>
+        <tr>
+            <td>K11</td><td>K12</td><td>K13</td><td>K14</td>
+        </tr>
+    </table>
+
+    <p></p>
+
+    <table border="2">
+        <tr>
+            <th colspan="3">N1</th><th>N2</th><th>N3</th>
+        </tr>
+        <tr>
+            <td>K1</td><td>K2</td><td>K3</td><td>K4</td><td>K5</td>
+        </tr>
+        <tr>
+            <td rowspan="2">K6</td><td>K7</td><td>K8</td><td>K9</td><td>K10</td>
+        </tr>
+        <tr>
+            <td>K11</td><td>K12</td><td>K13</td><td>K14</td>
+        </tr>
+        <tr>
+            <td>K15</td><td colspan="3">K116</td><td>K17</td>
+        </tr>
+        <tr>
+            <td>K18</td><td>K19</td><td>K20</td><td>K21</td><td>K22</td>
+        </tr>
+    </table>
 </body>
 </html>
